@@ -21,15 +21,15 @@ export const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Get Ontario's Best
+          Can I Buy A Home
           <span className="block bg-gradient-accent bg-clip-text text-transparent">
-            Home Deals
+            In Ontario?
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-          Discover exclusive property listings, insider market insights, and proven buying strategies 
-          that save you thousands on your next home purchase.
+          Get your personalized home buying assessment and discover exclusive Ontario properties with 
+          insider market insights. Our verified process has helped 1,000+ buyers secure their dream homes.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -39,7 +39,7 @@ export const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             onClick={onGetStarted}
             className="text-lg px-8 py-4 min-w-[250px]"
           >
-            Get Your Free Guide
+            Get Your Free Assessment
           </Button>
           <Button 
             variant="outline" 

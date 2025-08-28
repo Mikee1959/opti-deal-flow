@@ -92,7 +92,7 @@ export const LeadForm = ({ resourceType = "all", onSuccess }: LeadFormProps) => 
               Get Your Free {getResourceTitle()}
             </CardTitle>
             <CardDescription className="text-lg">
-              Join 1,000+ smart home buyers who got exclusive access to Ontario's best property deals.
+              Join 1,000+ verified home buyers who discovered their path to Ontario homeownership with our expert guidance.
             </CardDescription>
           </CardHeader>
           
