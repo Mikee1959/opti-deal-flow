@@ -45,7 +45,7 @@ export const EmailVerification = ({ email, onVerified, onBack }: EmailVerificati
       if (otp === "123456" || otp.length === 6) {
         toast({
           title: "Email Verified!",
-          description: "Your resources are now ready for download.",
+          description: "Your account has been verified successfully.",
         });
         onVerified();
       } else {
@@ -102,7 +102,7 @@ export const EmailVerification = ({ email, onVerified, onBack }: EmailVerificati
               Verify Your Email
             </CardTitle>
             <CardDescription className="text-lg">
-              We've sent a 6-digit verification code to:
+              Enter the 6-digit verification code sent to:
               <br />
               <strong className="text-foreground">{email}</strong>
             </CardDescription>
@@ -143,7 +143,7 @@ export const EmailVerification = ({ email, onVerified, onBack }: EmailVerificati
                 ) : (
                   <>
                     <CheckCircle className="w-5 h-5 mr-2" />
-                    Verify & Access Resources
+                    Verify & Access Account
                   </>
                 )}
               </Button>

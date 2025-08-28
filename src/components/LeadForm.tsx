@@ -89,10 +89,10 @@ export const LeadForm = ({ resourceType = "all", onSuccess }: LeadFormProps) => 
               <Mail className="w-8 h-8" />
             </div>
             <CardTitle className="text-3xl font-bold mb-2">
-              Get Your Free {getResourceTitle()}
+              Create Your Account
             </CardTitle>
             <CardDescription className="text-lg">
-              Join 1,000+ verified home buyers who discovered their path to Ontario homeownership with our expert guidance.
+              Enter your details to access your Ontario home buying dashboard.
             </CardDescription>
           </CardHeader>
           
@@ -144,32 +144,27 @@ export const LeadForm = ({ resourceType = "all", onSuccess }: LeadFormProps) => 
                 className="w-full h-14 text-lg"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending Verification..." : "Get Instant Access"}
+                {isSubmitting ? "Sending Verification..." : "Create Account & Verify Email"}
               </Button>
             </form>
 
-            {/* Trust Indicators */}
+            {/* Security Indicators */}
             <div className="mt-8 space-y-4">
               <div className="border-t border-border pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-success" />
-                    <span>Email Verified Access</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-success" />
-                    <span>No Spam Guarantee</span>
+                    <span>Email Verification Required</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Lock className="w-5 h-5 text-success" />
-                    <span>Your Data is Secure</span>
+                    <span>Secure Account Access</span>
                   </div>
                 </div>
               </div>
               
               <p className="text-xs text-muted-foreground text-center">
-                By submitting this form, you agree to receive valuable home buying tips and market updates. 
-                You can unsubscribe at any time. No phone number required.
+                We'll send a verification code to your email to confirm your account.
               </p>
             </div>
           </CardContent>
