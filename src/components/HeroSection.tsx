@@ -32,7 +32,7 @@ export const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
           insider market insights. Our verified process has helped 1,000+ buyers secure their dream homes.
         </p>
 
-        <div className="flex justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
             variant="hero" 
             size="lg" 
@@ -40,6 +40,13 @@ export const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             className="text-lg px-8 py-4 min-w-[250px]"
           >
             Create Account
+          </Button>
+          <Button 
+            variant="hero" 
+            size="lg"
+            className="text-lg px-8 py-4 min-w-[250px]"
+          >
+            Sign In
           </Button>
         </div>
 
